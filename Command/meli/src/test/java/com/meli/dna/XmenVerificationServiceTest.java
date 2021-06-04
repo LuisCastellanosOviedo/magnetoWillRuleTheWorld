@@ -1,22 +1,30 @@
 package com.meli.dna;
 
+import com.meli.persistence.repository.DynamoRepository;
 import com.meli.xmen.XmenVerificationService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
+@RunWith(MockitoJUnitRunner.class)
 public class XmenVerificationServiceTest {
 
+  @InjectMocks
   private XmenVerificationService xmenVerificationService;
 
-  @Before
-  public void setUp() throws Exception {
-    xmenVerificationService = new XmenVerificationService();
-  }
+  @Mock
+  private  DynamoRepository dynamoRepository;
 
   @Test
   public void name() throws ExecutionException, InterruptedException {
@@ -49,6 +57,7 @@ public class XmenVerificationServiceTest {
 
 
 
-    System.out.println(a);
+    System.out.println(Stream.of(a)
+            .collect(Collectors.joining(",")));
   }
 }

@@ -18,4 +18,13 @@ public class XmenDNAFinderTest {
 
         Assert.assertEquals(XmenDNAFinder.countMutantDNAPresent("CCCCTAGGGG", 0, 1), 2);
     }
+
+    @Test
+    public void eee() {
+
+        String [] a = {"a","b"};
+
+        System.out.println(a.toString());
+
+    }
 }
