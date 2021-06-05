@@ -1,4 +1,4 @@
-package com.meli;
+package com.meli.xmen.model;
 
 
 import lombok.AllArgsConstructor;
@@ -13,6 +13,5 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DnaRequest {
-
     private List<String> dna;
 }

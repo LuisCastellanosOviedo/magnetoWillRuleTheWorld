@@ -1,4 +1,4 @@
-package com.meli.dna;
+package com.meli.xmen.dna;
 
 import java.util.concurrent.ExecutionException;
 

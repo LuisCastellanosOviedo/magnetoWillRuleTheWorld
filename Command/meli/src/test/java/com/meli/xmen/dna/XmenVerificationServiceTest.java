@@ -1,9 +1,8 @@
-package com.meli.dna;
+package com.meli.xmen.dna;
 
-import com.meli.persistence.repository.DynamoRepository;
-import com.meli.xmen.XmenVerificationService;
+import com.meli.xmen.persistence.repository.DynamoRepository;
+import com.meli.xmen.service.XmenVerificationService;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -11,7 +10,6 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
@@ -59,5 +57,13 @@ public class XmenVerificationServiceTest {
 
     System.out.println(Stream.of(a)
             .collect(Collectors.joining(",")));
+  }
+
+
+  @Test
+  public void testDiagonal () {
+    String[] dna2 = {"ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"};
+
+    //System.out.println("----->>>>"+XmenVerificationService.diago(dna2));
   }
 }

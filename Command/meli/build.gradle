@@ -97,6 +97,8 @@ jacocoTestReport {
 	dependsOn test
 }
 
+
+
 dependencies {
 	implementation("com.amazonaws:aws-java-sdk-dynamodb:1.11.509")
 	implementation group: 'org.mockito', name: 'mockito-core', version: "1.10.19"
