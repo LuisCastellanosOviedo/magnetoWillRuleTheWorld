@@ -107,30 +107,14 @@ dependencies {
 
 
 	compile group: 'org.springframework', name: 'spring-tx', version: '5.2.5.RELEASE'
-	compile ("commons-collections:commons-collections:3.2.2") {
-		force = true
-	}
-	compile ("com.google.guava:guava:25.0-jre"){
-		force = true
-	}
-	compile ("com.sun.mail:javax.mail:1.5.5"){
-		force = true
-	}
+	compile ("commons-collections:commons-collections:3.2.2")
+	compile ("com.google.guava:guava:25.0-jre")
+	compile ("com.sun.mail:javax.mail:1.5.5")
 	compile ("org.cryptacular:cryptacular:1.2.4")
-	compile ("org.springframework:spring-webmvc:5.0.7.RELEASE"){
-		force = true
-	}
-	compile ("org.apache.santuario:xmlsec:2.1.4"){
-		exclude group: 'commons-codec', module: 'commons-codec'
-		force = true
-	}
-	compile ("com.fasterxml.woodstox:woodstox-core:5.3.0"){
-		force = true
-	}
+	compile ("org.springframework:spring-webmvc:5.0.7.RELEASE")
+	compile ("org.apache.santuario:xmlsec:2.1.4")
+	compile ("com.fasterxml.woodstox:woodstox-core:5.3.0")
 	compile("com.amazonaws:aws-lambda-java-events:2.2.6")
-			{
-				force = true
-			}
 	compile("com.amazonaws:aws-lambda-java-core:1.2.0")
 	compile group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
 	testImplementation 'junit:junit:4.12'
