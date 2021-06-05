@@ -22,6 +22,13 @@ costos. Si se quiere hacer un prueba bastante fuerte de carga se recomienda
 pasar la la tabla consumo on-demand. Dado que esta desplegado en una cuenta 
 con el free tier se solicita no cambiar estos valores.
 
+Por ultimo detallar que las lambdas estan desplegadas en la regios us-east-2 (ohio)
+mientras que la tabla de dynamos esta en la region us-east-1 (virginia)
+
+Se envia por correo usuario de aws para acceso a la consola y se pueda desplegar si se desea
+una version generada.
+
+
 ### Detalle de las lambdas
 
 En este repositorio hay 2 carpetas:
