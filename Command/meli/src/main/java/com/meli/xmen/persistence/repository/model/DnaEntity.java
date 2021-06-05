@@ -3,14 +3,12 @@ package com.meli.xmen.persistence.repository.model;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBRangeKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 
 @Builder
 @AllArgsConstructor
+@Getter
 @DynamoDBTable(tableName = "")
 public class DnaEntity {
 
